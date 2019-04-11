@@ -4,7 +4,7 @@ session_start();
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>A propos | Mél'égumes</title>
+    <title>Formation | Mél'égumes</title>
     <?php
     require_once("include_head.php");
     ?>

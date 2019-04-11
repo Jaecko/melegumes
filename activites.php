@@ -25,6 +25,7 @@ session_start();
             <p>Mélanie propose des formations pour les éducateurs. Si vous êtes désireux d’offrir de nouvelles activités
                 originales dans un cadre relaxant, avec la mise en œuvre de techniques pédagogiques, n’hésitez pas à
                 nous contacter !</p>
+                <a class="button button_full formation" href="formation.php" title="Commandez des légumes de saison">En savoir +</a>
         </div>
     </div>
     <div data-aos="fade-in" data-aos-duration="500" data-aos-offset="-1000">
