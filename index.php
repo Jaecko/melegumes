@@ -87,7 +87,7 @@ session_start();
                 <div class="gallery">
                     <?php
                     require_once("class/instagram.php");
-                    $instagram = new Instagram(['access_token' => "9363627004.cd40ff3.087d274a70d840d4a2e0557766915b70"]);
+                    $instagram = new Instagram(['access_token' => "52883765.fe65d7d.a42f4f2aa19942b6a30b678cec895a91"]);
                     $limit = 8;
                     try {
                         $medias = $instagram->getRecentMedia($limit);

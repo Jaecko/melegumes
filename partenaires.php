@@ -36,7 +36,7 @@ require_once('_inc.php');
                 <h3 data-aos="fade-in" data-aos-duration="500">Devenez partenaire !</h3>
                 <div id="partenaire_content" data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">
                     <?php $form = new Form(isset($_SESSION['inputs']) ? $_SESSION['inputs'] : []); ?>
-                    <form class="form_partenaire partenaire" action="post_contact.php" method="post">
+                    <form class="form_partenaire partenaire" action="send_mail.php" method="post">
                         <?= $form->text('name', 'Votre nom'); ?>
 
                         <?= $form->text('company', 'Nom de la société'); ?>

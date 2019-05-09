@@ -255,7 +255,7 @@ header {
   transition: -webkit-box-shadow .2s;
   transition: box-shadow .2s;
   transition: box-shadow .2s, -webkit-box-shadow .2s;
-  z-index: 100;
+  z-index: 1000;
 }
 
 header.scrollTo {

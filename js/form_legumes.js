@@ -79,6 +79,7 @@ function more(item) {
         temp_tab_object.amount = 1;
         temp_tab_object.price = price;
         temp_tab_object.unite = unite;
+        temp_tab_object.slug = slug;
         tab_element[id] = temp_tab_object;
     }
     total();
@@ -209,6 +210,7 @@ function exact(item) {
         temp_tab_object.amount = quantite;
         temp_tab_object.price = itemPrice;
         temp_tab_object.unite = unite;
+        temp_tab_object.slug = slug;
         tab_element[id] = temp_tab_object;
     }
     total();

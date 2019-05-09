@@ -224,7 +224,7 @@ $tabJour = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 
     <section class="wrapper sections form_contact_legumes legumes" id="form_contact_legumes" data-aos="fade-in" data-aos-duration="500">
         <h3>Commander</h3>
         <?php $form = new Form(isset($_SESSION['inputs']) ? $_SESSION['inputs'] : []); ?>
-        <form action="post_contact.php" method="post">
+        <form action="send_mail.php" method="post">
 
             <?= $form->text('name', 'Votre nom'); ?>
 
@@ -265,6 +265,7 @@ $tabJour = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 
                             $i++;
                         }   
                     }
+                    $_SESSION['jours']= $tabDate;
 
                 ?>
                 <?= $form->select('jour','Jour de retrait', [$tabDate[0], $tabDate[1]]); ?>

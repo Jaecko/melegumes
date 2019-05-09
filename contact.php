@@ -41,7 +41,7 @@ require_once('_inc.php');
                 <h3 class="contactus" data-aos="fade-in" data-aos-duration="500">Nous contacter</h3>
                 <div id="contact_content" data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">
                     <?php $form = new Form(isset($_SESSION['inputs']) ? $_SESSION['inputs'] : []); ?>
-                    <form class="form_contact" action="post_contact.php" method="post">
+                    <form class="form_contact" action="send_mail.php" method="post">
 
                         <?= $form->text('name', 'Votre nom'); ?>
 
