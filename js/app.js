@@ -381,7 +381,8 @@ legumes.controller('DatasCtrl', function ($scope) {
     let filteredDatas = [];
     const reqDatas = datasLegumes;
     for (const key in reqDatas) {
-        if (key > 2 && reqDatas[key].visible == true && reqDatas[key].season == "hiver") { // A modifier si le nombre de paniers change
+        // if (key > 2 && reqDatas[key].visible == true && reqDatas[key].season == "hiver") { // A modifier si le nombre de paniers change
+        if (key > 2 && reqDatas[key].visible == true) { // A modifier si le nombre de paniers change
             filteredDatas.push(reqDatas[key]);
         }
     }

@@ -4,6 +4,7 @@ session_start();
 require_once('mails/templates/contact.php');
 require_once('mails/templates/partenaires.php');
 require_once('mails/templates/legumes.php');
+require_once('mails/templates/formations.php');
 
 # Include the Autoloader (see "Libraries" for install instructions)
 require 'vendor/autoload.php';
@@ -212,5 +213,75 @@ if (isset($_POST['commandeSubmit'])) {
 
         $_SESSION['success'] = 1;
         header('Location: legumes.php');
+    }
+}
+
+
+
+
+
+
+# Envoie de mail de formation
+
+if (isset($_POST['formationSubmit'])) {
+    $errors = [];
+
+    if (!array_key_exists('name', $_POST) || $_POST['name'] == "") {
+        $errors['name'] = "Vous n'avez pas renseigné votre nom";
+    }
+
+    if (!array_key_exists('email', $_POST) || $_POST['email'] == "" || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+        $errors['email'] = "Vous n'avez pas renseigné votre email";
+    }
+
+    if (!array_key_exists('tel', $_POST) || $_POST['tel'] == "") {
+        $errors['tel'] = "Vous n'avez pas renseigné votre numéro de téléphone";
+    }
+
+    if (!array_key_exists('module', $_POST) || $_POST['module'] == "" || empty($_POST['module'])) {
+        $errors['module'] = "Vous n'avez pas renseigné de module";
+    }
+
+    if (!empty($errors)) {
+        $_SESSION['errors'] = $errors;
+        $_SESSION['inputs'] = $_POST;
+        header('Location: formation');
+    } else {
+        $name = htmlspecialchars($_POST['name']);
+        $email = htmlspecialchars($_POST['email']);
+        $tel = htmlspecialchars($_POST['tel']);
+        $modules=[];
+        
+        if (isset($_POST['message']) && !empty($_POST['message']) && $_POST['message'] != " ") {
+            $messageWrited = htmlspecialchars($_POST['message'], ENT_QUOTES, 'UTF-8');
+        } else {
+            $messageWrited = "Aucune";
+        }
+
+        $i=0;
+        foreach($_POST['module'] as $val){
+            $modules[$i] = $val;
+            $i++;
+        }
+
+		# Options config
+		$option['REPLY_TO']=$email; // change dynamic
+		$option['BCC']="formation@melegumes.be"; // change dynamic
+		$option['SUBJECT']='[Inscription] ' . $name;
+        $option['BODY']= formationsToMel($name, $email, $tel, $modules, $messageWrited);
+
+
+		# Make the call to the client.
+		$result = $mgClient->sendMessage($domain, array(
+			'from' => $option['FROM_NAME']." <".$option['FROM_MAIL'].">",
+			'to' => $option['TO_NAME']." <".$option['TO_MAIL'].">",
+			'bcc' => $option['BCC'],
+			'h:Reply-To' => $option['REPLY_TO'],
+			'subject' => $option['SUBJECT'],
+			'html' => $option['BODY']
+		));
+
+        $_SESSION['success'] = 1;
+        header('Location: formation.php');
     }
 }

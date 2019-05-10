@@ -25,7 +25,7 @@ require_once('_inc.php');
 
     <?php if (array_key_exists('success', $_SESSION)): ?>
         <div class="success">
-            Votre mail a bien été envoyé
+            Merci pour votre message, nous vous contacterons dans les plus brefs délais
         </div>
     <?php endif; ?>
 

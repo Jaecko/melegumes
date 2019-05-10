@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION['exclu'] = true;
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -16,14 +17,26 @@ session_start();
     ?>
 </header>
 
+<?php
+    if($_SESSION['exclu']==true){
+?>
+    <div class="exclu">
+        <div class="wrapper">
+            <h5 class="exclu-title">Ne ratez pas notre nouvelle formation !</h5>
+            <a class="button button_exclu button_empty" href="formation.php" title="En savoir plus sur notre nouvelle formation.">En savoir +</a>
+        </div>
+    </div>
+<?php 
+    }
+?>
+
 <section class="wrapper sections fullpage legumes texte_droite entete">
     <div class="content fullpage" data-aos="fade-in" data-aos-duration="500">
         <div class="textes">
             <h1>Du potager <br/>à votre assiette</h1>
             <h2>Du naturel à l'ancienne, nous vous proposons un large choix de légumes de saison</h2>
 
-            <a class="button big_button button_full" href="legumes.php" title="Commandez des légumes de saison">Commandez-les
-                !</a>
+            <a class="button big_button button_full" href="legumes.php" title="Commandez des légumes de saison">Commandez-les !</a>
         </div>
         <div class="imageAccroche">
             <img class="lazy-load" src="img/Brocoli.png" data-src="img/Brocoli.png"
