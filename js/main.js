@@ -28,6 +28,7 @@ $(document).ready(function () {
             $("#fermer_menu").toggle();
             $(this).addClass('is-active');
             $('.entete').css('filter', 'blur(.2rem)');
+            $('.exclu').css('filter', 'blur(.2rem)');
             $('main').css('filter', 'blur(.2rem)');
             $('footer').css('filter', 'blur(.2rem)');
             $('html').addClass('hidden');
@@ -36,6 +37,7 @@ $(document).ready(function () {
             $("#fermer_menu").toggle();
             $(this).removeClass('is-active');
             $('.entete').css('filter', 'blur(0rem)');
+            $('.exclu').css('filter', 'blur(0rem)');
             $('main').css('filter', 'blur(0rem)');
             $('footer').css('filter', 'blur(0rem)');
             $('html').removeClass('hidden');

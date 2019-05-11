@@ -305,13 +305,15 @@ header.scrollTo ul#head #nav_mobile ul {
   position: fixed;
   top: 86px;
   left: 0;
-  z-index: 1000;
+  z-index: 101;
 
-  width: 100vw;
+  width: 100%;
   padding: .25rem 0;
 
   background-color: $color;
   box-shadow: $boxShadowLittle;
+
+  transition: opacity .2s;
 }
 
 .exclu > .wrapper{
@@ -360,14 +362,17 @@ header.scrollTo ul#head #nav_mobile ul {
   width: 100%;
   border: 1px solid #CCC;
   border-radius: 5px;
+  transition:all .2s;
 }
 
 .modules .module input[type="checkbox"]:checked + .module_card{
   border: 1px solid $color;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .modules .module .module_card:hover{
   cursor: pointer;
+  border: 1px solid $color;
 }
 
 .modules .module .module_title{
@@ -866,15 +871,10 @@ h3:before {
 
 main .sections.galleries .content .textes .gallery {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
-  grid-template-rows: 1fr 1fr;
-  grid-column-gap: .7rem;
-  grid-row-gap: .7rem;
-  justify-content: center;
-  justify-items: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin: 3rem 0;
+  flex-wrap: wrap;
 }
 
 main .sections.galleries .content .textes .gallery .images {
@@ -884,6 +884,8 @@ main .sections.galleries .content .textes .gallery .images {
   transition: transform .2s, box-shadow .2s;
   overflow: hidden;
   border-radius: 1rem;
+  flex: 1 1 30%;
+  margin: .5rem;
 }
 
 main .sections.galleries .content .textes .gallery .images:hover {
@@ -1775,13 +1777,21 @@ footer {
 }
 
 #foot li#horaires ul{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-row-gap: .5rem;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  // grid-row-gap: .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 } 
+
 #foot li#horaires ul li{
   display: block;
+  margin-bottom: 1rem;
   font-size: 0.8rem;
+
+  flex:1 0 21%;
 } 
 
 #foot li#horaires ul li h5{
@@ -2080,10 +2090,10 @@ footer div#sociaux .lineFooter div {
 
   .aside.legumes.mobile #aside_all_content {
     width: 70%;
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    // position: absolute;
+    // top: 0%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
   }
 
 
@@ -2221,6 +2231,12 @@ footer div#sociaux .lineFooter div {
     display: none;
   }
 
+  .exclu{
+    top: 91px;
+    left: 0;
+    z-index: 99;
+  }
+  
   main .sections:nth-child(odd) .content, main .sections:nth-child(even) .content {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -2438,9 +2454,9 @@ footer div#sociaux .lineFooter div {
     max-width: 80%;
   }
 
-
-  main .sections.galleries .content .textes .gallery .images:nth-child(7), main .sections.galleries .content .textes .gallery .images:nth-child(8) {
-    display: none
+  main .sections.galleries .content .textes .gallery .images {
+    flex: 1 1 30%;
+    margin: .5rem;
   }
 
 
@@ -2533,27 +2549,6 @@ footer div#sociaux .lineFooter div {
   #foot li#sociaux div a:hover::before {
     font-size: 2em;
   }
-
-  // #foot li#coord div{
-  //   margin: 1rem 0;
-  // }
-
-  // #foot li#coord a{
-  //   width: 100%;
-  //   text-align: center;
-  // }
-
-  // #foot li#coord a::before{
-  //   display: block;
-  //   margin: .5rem 0;
-
-  // }
-
-  // #foot li#partenaires h4{
-  //   text-align: center;
-  // }
-
-
 }
 
 
@@ -2649,9 +2644,15 @@ footer div#sociaux .lineFooter div {
 
 
   #foot {
-    grid-template-columns: 1fr 1fr auto;
+    grid-template-columns: 1fr;
   }
 
+  #foot li {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0 !important;
+    text-align: center;
+  }
 
 }
 
@@ -2671,8 +2672,31 @@ footer div#sociaux .lineFooter div {
 
   }
 
+  // Exclu
+  
+  .exclu-title{
+    max-width: 65%;
+    line-height: 1.2;
+  }
+
+  // Formations modules
+
+  .modules .module{
+    padding: 0;
+  }
+
+  .training_form{
+    width: 100%;
+  }
+
+  // Buttons
+
   .button.big_button {
     font-size: 1.2em;
+  }
+
+  .button.button_exclu{
+    padding: 0;
   }
 
 
@@ -2772,7 +2796,7 @@ footer div#sociaux .lineFooter div {
 
   .gallery_legumes .items_images img {
     display: block;
-    width: 100%;
+    width: 120%;
     margin: 0 auto;
     top: -95%;
     left: -30%;
@@ -2837,8 +2861,8 @@ footer div#sociaux .lineFooter div {
   }
 
   main .sections.galleries .content .textes .gallery .images {
-    width: 100%;
-    height: 100%;
+    flex: 1 1 100%;
+    margin: .5rem 0;
   }
 
 
@@ -2867,26 +2891,16 @@ footer div#sociaux .lineFooter div {
   }
 
   #foot li {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 1rem 0 !important;
     text-align: center;
   }
 
-  // #foot li:first-child {
-  //   padding: 0;
-  //   padding-top: 0rem;
-  //   order: 0;
-  // }
-
-  // #foot li:nth-child(2) {
-  //   order: 1;
-  // }
-
-  // #foot li:last-child {
-  //   order: 2;
-  // }
-
+  
+  #foot li#horaires ul li{
+    flex:0 50%;
+  } 
 
 }
 
@@ -2896,7 +2910,11 @@ footer div#sociaux .lineFooter div {
 
 
 
-
+@media all and (max-width: 350px) {
+  .gallery_legumes .items_images img {
+    width: 150%;
+  }
+}
 
 
 

@@ -11,11 +11,6 @@ $_SESSION['exclu'] = true;
     ?>
 </head>
 <body>
-<header>
-    <?php
-    require_once("header.php");
-    ?>
-</header>
 
 <?php
     if($_SESSION['exclu']==true){
@@ -29,6 +24,12 @@ $_SESSION['exclu'] = true;
 <?php 
     }
 ?>
+
+<header>
+    <?php
+    require_once("header.php");
+    ?>
+</header>
 
 <section class="wrapper sections fullpage legumes texte_droite entete">
     <div class="content fullpage" data-aos="fade-in" data-aos-duration="500">
@@ -101,7 +102,7 @@ $_SESSION['exclu'] = true;
                     <?php
                     require_once("class/instagram.php");
                     $instagram = new Instagram(['access_token' => "52883765.fe65d7d.a42f4f2aa19942b6a30b678cec895a91"]);
-                    $limit = 8;
+                    $limit = 9;
                     try {
                         $medias = $instagram->getRecentMedia($limit);
                         foreach ($medias as $media) {
