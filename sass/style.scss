@@ -1791,7 +1791,7 @@ footer {
   margin-bottom: 1rem;
   font-size: 0.8rem;
 
-  flex:1 0 21%;
+  flex:1 0 50%;
 } 
 
 #foot li#horaires ul li h5{
@@ -2654,6 +2654,10 @@ footer div#sociaux .lineFooter div {
     text-align: center;
   }
 
+  #foot li#horaires ul li{
+    flex : 1 0 21%;
+  }
+
 }
 
 
@@ -2806,6 +2810,7 @@ footer div#sociaux .lineFooter div {
     grid-template-columns: 1fr;
     align-items: center;
     margin: 1.5rem 0;
+    padding-right: .5rem;
   }
 
   .gallery_legumes .items .title * {

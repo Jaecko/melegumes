@@ -337,30 +337,22 @@ const datasLegumes = [
         "visible":true
     },{
         "id": 38,
-        "name": "Feuilles de chêne",
+        "name": "Feuille de chêne verte",
         "season": "été",
         "price": "0.95", // 0.95 - 1.50
         "unite": "pièce",
-        "slug":"feuillesDeChene",
+        "slug":"feuilleDeCheneVerte",
         "visible":true
     },{
         "id": 39,
-        "name": "Salade verte",
+        "name": "Feuille de chêne rouge",
         "season": "été",
         "price": "0.95", // 0.95 - 1.50
         "unite": "pièce",
-        "slug":"saladeVerte",
+        "slug":"feuilleDeCheneRouge",
         "visible":true
     },{
         "id": 40,
-        "name": "Salade rouge",
-        "season": "été",
-        "price": "0.95", // 0.95 - 1.50
-        "unite": "pièce",
-        "slug":"saladeRouge",
-        "visible":true
-    },{
-        "id": 41,
         "name": "Salade 4 saisons",
         "season": "été",
         "price": "0.95", // 0.95 - 1.50

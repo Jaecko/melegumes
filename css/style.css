@@ -2077,8 +2077,8 @@ footer {
   margin-bottom: 1rem;
   font-size: 0.8rem;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 21%;
-          flex: 1 0 21%;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
 }
 
 #foot li#horaires ul li h5 {
@@ -2839,6 +2839,11 @@ footer div#sociaux .lineFooter div {
     padding: 1rem 0 !important;
     text-align: center;
   }
+  #foot li#horaires ul li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 21%;
+            flex: 1 0 21%;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -2976,6 +2981,7 @@ footer div#sociaux .lineFooter div {
         -ms-flex-align: center;
             align-items: center;
     margin: 1.5rem 0;
+    padding-right: .5rem;
   }
   .gallery_legumes .items .title * {
     padding: 0 !important;
