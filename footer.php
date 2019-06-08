@@ -43,7 +43,7 @@
                 <a href="https://fr-fr.facebook.com/mosaicmons" target="_blank" title="Lien vers site de Mosaïc">
                     <img src="img/partenaires/logo_mosaic.png" alt="Logo de Mosaïc" id="mosaic" onMouseOver="partenaireHover(this);" onMouseOut="partenaireOut(this);">
                 </a>
-                <a href="partenaires.php" title="Lien vers la page partenaire">
+                <a href="partenaires" title="Lien vers la page partenaire">
 
                 </a>
             </div>

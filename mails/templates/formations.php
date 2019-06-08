@@ -38,8 +38,8 @@ function formationsToMel($name, $email, $tel, $modules, $messageWrited){
         <table style="width: 660px; margin: 0 auto; display: block; border-collapse: collapse; font-size: 16px;">
     <!-- logo --><tr>
     <td>
-                    <a href="http://melegumes.jasoncaussin.be/" target="_blank">
-                        <img style="width: 7em;" id="logo" src="http://melegumes.jasoncaussin.be/img/melegumes.png" alt="Mél\'égumes" /></a>
+                    <a href="http://www.melegumes.be/" target="_blank">
+                        <img style="width: 7em;" id="logo" src="http://www.melegumes.be/img/melegumes.png" alt="Mél\'égumes" /></a>
                 </td>
                 <td></td>
                 <td></td>

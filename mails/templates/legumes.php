@@ -17,7 +17,7 @@ function legumesToMel($name, $email, $tel, $choix, $jour, $heure, $messageWrited
 
             $command .= '<tr>
                 <td style="width: 33.33%; border-bottom: 1px solid #333">
-                    <img style="width: 10em;" src="http://melegumes.jasoncaussin.be/img/legumes/' . $value->slug . '.png" alt="' . $value->name . '">
+                    <img style="width: 10em;" src="http://www.melegumes.be/img/legumes/' . $value->slug . '.png" alt="' . $value->name . '">
                 </td>
                 <td style="width: 33.33%; border-bottom: 1px solid #333">
                     <p  style="text-align: center;"><span class="produit"> ' . $value->name . ' </span> | <span class="quantite"> ' . $value->amount . ' </span> ' . $unity . '</p>
@@ -57,8 +57,8 @@ function legumesToMel($name, $email, $tel, $choix, $jour, $heure, $messageWrited
         <table style="width: 660px; margin: 0 auto; display: block; border-collapse: collapse; font-size: 16px;">
     <!-- logo --><tr>
     <td>
-                    <a href="http://melegumes.jasoncaussin.be/" target="_blank">
-                        <img style="width: 7em;" id="logo" src="http://melegumes.jasoncaussin.be/img/melegumes.png" alt="Mél\'égumes" /></a>
+                    <a href="http://www.melegumes.be/" target="_blank">
+                        <img style="width: 7em;" id="logo" src="http://www.melegumes.be/img/melegumes.png" alt="Mél\'égumes" /></a>
                 </td>
                 <td></td>
                 <td></td>

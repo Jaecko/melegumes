@@ -369,7 +369,7 @@ header.scrollTo ul#head #nav_mobile ul {
 #nav_mobile #menu_mobile ul {
   display: none;
   position: fixed;
-  top: 5.7rem;
+  top: 5.6rem;
   right: 1.5rem;
   width: auto;
   padding: 0.5rem 1rem;
@@ -2492,7 +2492,7 @@ footer div#sociaux .lineFooter div {
     display: none;
   }
   .exclu {
-    top: 91px;
+    top: 90px;
     left: 0;
     z-index: 99;
   }
@@ -2625,7 +2625,7 @@ footer div#sociaux .lineFooter div {
   .aside.legumes.mobile {
     width: 100%;
     position: fixed;
-    top: 50%;
+    top: 50vh;
     left: 50%;
     -webkit-transform: translate(-50%, -50%) !important;
             transform: translate(-50%, -50%) !important;

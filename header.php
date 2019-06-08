@@ -1,27 +1,27 @@
 <ul id="head" class="wrapper">
     <li>
-        <a href="index.php"><img src="img/melegumes.png" alt="Logo de Mél'égumes" id="logo" title="Retour à l'accueil"></a>
+        <a href="index"><img src="img/melegumes.png" alt="Logo de Mél'égumes" id="logo" title="Retour à l'accueil"></a>
     </li>
     <li>
         <ul id="nav">
             <li>
-                <a class="anav accueil" href="index.php" title="Lien vers la page d'accueil">Accueil</a>
+                <a class="anav accueil" href="index" title="Lien vers la page d'accueil">Accueil</a>
                 <div class="ligne"></div>
             </li>
             <li>
-                <a class="anav aPropos" href="a_propos.php" title="Lien vers la page à propos">A propos</a>
+                <a class="anav aPropos" href="a_propos" title="Lien vers la page à propos">A propos</a>
                 <div class="ligne"></div>
             </li>
             <li>
-                <a class="anav legumes" href="legumes.php" title="Lien vers la page nos légumes">Nos légumes</a>
+                <a class="anav legumes" href="legumes" title="Lien vers la page nos légumes">Nos légumes</a>
                 <div class="ligne"></div>
             </li>
             <li>
-                <a class="anav activites" href="activites.php" title="Lien vers la page nos activités">Nos activités</a>
+                <a class="anav activites" href="activites" title="Lien vers la page nos activités">Nos activités</a>
                 <div class="ligne"></div>
             </li>
             <li>
-                <a class="anav contact" href="contact.php" title="Lien vers la page contact">Contact</a>
+                <a class="anav contact" href="contact" title="Lien vers la page contact">Contact</a>
                 <div class="ligne"></div>
             </li>
         </ul>
@@ -34,24 +34,24 @@
             <nav id="menu_mobile">
                 <ul>
                     <li>
-                        <a class="anav accueil" href="index.php" title="Lien vers la page d'accueil">Accueil</a>
+                        <a class="anav accueil" href="index" title="Lien vers la page d'accueil">Accueil</a>
                         <div class="ligne ligne_accueil"></div>
                     </li>
                     <li>
-                        <a class="anav aPropos" href="a_propos.php" title="Lien vers la page à propos">A propos</a>
+                        <a class="anav aPropos" href="a_propos" title="Lien vers la page à propos">A propos</a>
                         <div class="ligne"></div>
                     </li>
                     <li>
-                        <a class="anav legumes" href="legumes.php" title="Lien vers la page nos légumes">Nos légumes</a>
+                        <a class="anav legumes" href="legumes" title="Lien vers la page nos légumes">Nos légumes</a>
                         <div class="ligne"></div>
                     </li>
                     <li>
-                        <a class="anav activites" href="activites.php" title="Lien vers la page nos activités">Nos
+                        <a class="anav activites" href="activites" title="Lien vers la page nos activités">Nos
                             activités</a>
                         <div class="ligne"></div>
                     </li>
                     <li>
-                        <a class="anav contact" href="contact.php" title="Lien vers la page contact">Contact</a>
+                        <a class="anav contact" href="contact" title="Lien vers la page contact">Contact</a>
                         <div class="ligne"></div>
                     </li>
                 </ul>

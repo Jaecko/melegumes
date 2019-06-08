@@ -27,8 +27,8 @@ function partenairesToMel($name, $company, $email, $tel, $tva, $messageWrited){
         <table width="660" style="margin: 0 auto; display: block; border-collapse: collapse; font-family: \'Work Sans\', sans-serif,helvetica, sans-serif; font-size: 16px;">
     <!-- logo --><tr>
     <td>
-                    <a href="http://melegumes.jasoncaussin.be" target="_blank">
-                        <img style="width: 7em; margin-bottom: 2em;" id="logo" src="http://melegumes.jasoncaussin.be/img/melegumes.png" alt="Mél\'égumes" /></a>
+                    <a href="http://www.melegumes.be" target="_blank">
+                        <img style="width: 7em; margin-bottom: 2em;" id="logo" src="http://www.melegumes.be/img/melegumes.png" alt="Mél\'égumes" /></a>
                 </td>
             </tr>
     <!-- H1 + information --><tr>

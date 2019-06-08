@@ -22,10 +22,8 @@ session_start();
     <div class="wrapper content entete_full">
         <div class="textes" data-aos="fade-in" data-aos-duration="500">
             <h3 class="training">Nos formations</h3>
-            <p>Mélanie propose des formations pour les éducateurs. Si vous êtes désireux d’offrir de nouvelles activités
-                originales dans un cadre relaxant, avec la mise en œuvre de techniques pédagogiques, n’hésitez pas à
-                nous contacter !</p>
-                <a class="button button_full formation" href="formation.php" title="Commandez des légumes de saison">En savoir +</a>
+            <p>Mélanie propose diverses formations pour éducateurs désireux d’offrir de nouvelles activités, de nouvelles techniques pédagogiques originales dans un cadre relaxant, n’hésitez pas à la contacter !</p>
+                <!-- <a class="button button_full formation" href="formation" title="Commandez des légumes de saison">En savoir +</a> -->
         </div>
     </div>
     <div data-aos="fade-in" data-aos-duration="500" data-aos-offset="-1000">
@@ -42,9 +40,7 @@ session_start();
             </div>
             <div class="textes" data-aos="fade-in" data-aos-duration="500" data-aos-offset="-1000">
                 <h3 class="kids">Pour les enfants</h3>
-                <p>Un dossier pédagogique a été mis en place, permettant à Mélanie de vous accueillir ou d’aller à la
-                    rencontre des écoles, de groupes d’enfants afin de les sensibiliser à l’importance du vivant et la
-                    façon de bien s’alimenter… tout en s’amusant ! </p>
+                <p>Sensibiliser à l’importance du vivant et la façon de bien s’alimenter… tout en s’amusant !  Mélanie peut vous accueillir sur place ou se déplacer dans les établissements scolaires avec son tout nouveau dossier pédagogique </p>
             </div>
         </div>
     </section>
@@ -52,9 +48,7 @@ session_start();
         <div class="content page_70">
             <div class="textes" data-aos="fade-in" data-aos-duration="500">
                 <h3 class="events">Événements</h3>
-                <p>Il est possible que Mélanie soit présente durant certains évènements mis en place par la ville de
-                    Mons ou par d’autres secteurs événementiels. Elle a également plusieurs idées d’évènements qu’elle
-                    aimerait organiser dans le futur et, pourquoi pas, au sein même de son potager ! </p>
+                <p>Présente lors de certains événements mis en place par la ville de Mons ou par d’autres secteurs événementiels. Mélanie a également plusieurs idées événements qu’elle aimerait organiser et ce même au sein de son potager !</p>
             </div>
             <div class="imageAccroche" data-aos="fade-in" data-aos-duration="500">
                 <img class="scale lazy-load" src="img/Citrouille.png" data-src="img/Citrouille.png"

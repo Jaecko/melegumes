@@ -17,9 +17,12 @@ $_SESSION['exclu'] = true;
 ?>
     <div class="exclu">
         <div class="wrapper">
-            <h5 class="exclu-title">Ne ratez pas notre nouvelle formation !</h5>
-            <a class="button button_exclu button_empty" href="formation.php" title="En savoir plus sur notre nouvelle formation.">En savoir +</a>
+            <h5 class="exclu-title">Ne ratez pas notre journée portes ouvertes le 12 juillet à 17h !</h5>
         </div>
+        <!-- <div class="wrapper">
+            <h5 class="exclu-title">Ne ratez pas notre nouvelle formation !</h5>
+            <a class="button button_exclu button_empty" href="formation" title="En savoir plus sur notre nouvelle formation.">En savoir +</a>
+        </div> -->
     </div>
 <?php 
     }
@@ -37,7 +40,7 @@ $_SESSION['exclu'] = true;
             <h1>Du potager <br/>à votre assiette</h1>
             <h2>Du naturel à l'ancienne, nous vous proposons un large choix de légumes de saison</h2>
 
-            <a class="button big_button button_full" href="legumes.php" title="Commandez des légumes de saison">Commandez-les !</a>
+            <a class="button big_button button_full" href="legumes" title="Commandez des légumes de saison">Commandez-les !</a>
         </div>
         <div class="imageAccroche">
             <img class="lazy-load" src="img/Brocoli.png" data-src="img/Brocoli.png"
@@ -66,10 +69,10 @@ $_SESSION['exclu'] = true;
                 <h3 class="about">Qui sommes-nous ?</h3>
                 <p>Mel’égumes c’est un potager urbain utilisant la méthode de la permaculture qui vous propose des
                     paniers de légumes 100 % naturels. Après son voyage au Canada, Mélanie a été intriguée par les
-                    agriculteurs qui, de par leur activité, permettent aux personnes en réinsertion sociale de
+                    agriculteurs qui, de par leurs activités, permettent aux personnes en réinsertion sociale de
                     travailler. De retour de son voyage, elle s’est formée à la permaculture et a décidé de créer en
                     collaboration avec Peeter son propre projet de réinsertion sociale. </p>
-                <a class="button button_empty" href="a_propos.php" title="En savoir plus sur qui nous sommes">En savoir
+                <a class="button button_empty" href="a_propos" title="En savoir plus sur qui nous sommes">En savoir
                     +</a>
             </div>
             <div class="imageAccroche" data-aos="fade-in" data-aos-duration="500">
@@ -86,11 +89,8 @@ $_SESSION['exclu'] = true;
             </div>
             <div class="textes" data-aos="fade-in" data-aos-duration="500">
                 <h3 class="activity">Nos activités</h3>
-                <p>Mélanie propose des formations pour les éducateurs, de vous accueillir, d’aller à la rencontre de
-                    groupes d’enfants et même d’être présente durant certains évènements mis en place par la ville de
-                    Mons ou par d’autres secteurs événementiels, afin de vous sensibiliser à la bonne
-                    d’alimentation.</p>
-                <a class="button button_empty" href="activites.php" title="En savoir plus sur nos activités">En savoir +</a>
+                <p>Mélanie, afin de vous sensibiliser à la bonne alimentation, vous propose diverses activités: vous accueillir, aller à la rencontre de groupes d’enfants, former des éducateurs et être présent lors d'événements mis en place par la ville de Mons ou par d’autres secteurs événementiels.</p>
+                <a class="button button_empty" href="activites" title="En savoir plus sur nos activités">En savoir +</a>
             </div>
         </div>
     </section>
