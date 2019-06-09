@@ -114,6 +114,12 @@ strong{
   color: $titles;
 }
 
+.createdby p{
+  font-size: .8rem;
+  color: $color;
+  margin-top: 0;
+}
+
 
 /* Header */
 
@@ -1864,7 +1870,7 @@ footer div#sociaux {
   column-gap: .5rem;
   justify-content: end;
   align-items: center;
-  padding: 1rem 0 3rem 0;
+  padding: 1rem 0 0rem 0;
   // align-self: center;
 }
 
@@ -2222,6 +2228,11 @@ footer div#sociaux .lineFooter div {
 
 
 @media all and (max-width: 955px) {
+
+  .createdby p{
+    text-align: left;
+    margin-top: 1em;
+  }
 
   #nav_mobile {
     display: block;

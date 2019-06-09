@@ -234,6 +234,12 @@ strong {
   color: #600a35;
 }
 
+.createdby p {
+  font-size: .8rem;
+  color: #770C42;
+  margin-top: 0;
+}
+
 /* Header */
 ul {
   display: block;
@@ -2165,7 +2171,7 @@ footer div#sociaux {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem 0 3rem 0;
+  padding: 1rem 0 0rem 0;
 }
 
 footer div#sociaux div {
@@ -2485,6 +2491,10 @@ footer div#sociaux .lineFooter div {
 }
 
 @media all and (max-width: 955px) {
+  .createdby p {
+    text-align: left;
+    margin-top: 1em;
+  }
   #nav_mobile {
     display: block;
   }

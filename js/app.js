@@ -425,6 +425,15 @@ const datasLegumes = [
     unite: '500gr',
     slug: 'fraisesGariguettes',
     visible: true
+  },
+  {
+    id: 48,
+    name: 'Artichauts',
+    season: 'été',
+    price: '4.00',
+    unite: 'kg',
+    slug: 'artichauts',
+    visible: true
   }
 ];
 

@@ -66,4 +66,8 @@
             <div ></div>
         </div>
     </div>
+
+    <div class="createdby">
+        <p>Created by Caussin Jason, Serra Guerreiro Jérémy and Pierson Thibaut</p>
+    </div>
 </div>
