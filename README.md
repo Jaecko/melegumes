@@ -20,12 +20,6 @@ Nous avons choisi de créer un site web simple et épuré, avec une navigation i
 
 We chose to create a simple and clean website, with an intuitive navigation and clear typography. We also chose to highlight the client's vegetables, by presenting them in the form of thumbnails with an image and an explanatory text. We also created a contact page to allow the client to receive requests for quotes.
 
-## Illustrations
-
- ![Brocoli](/img/Brocoli.png)
- ![Carottes](/img/Carottes.png)
- ![Persil](/img/Persil.png)
-
 ## Développement
 
 ### Français
