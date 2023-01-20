@@ -11,9 +11,8 @@ require 'vendor/autoload.php';
 use Mailgun\Mailgun;
 
 # Instantiate the client.
-$mgClient = new Mailgun('cb0007eb1a1f318100b1c81beb7f18e5-6140bac2-4b4c61f8');
-$domain = "sandboxe988713c2f9c4b3095866a49c58d2ef9.mailgun.org";
-
+$mgClient = new Mailgun('yourMailGunKey');
+$domain = "yourMailGunDomain";
 
 $recipient = 'mel.egumes@gmail.com';
 
@@ -27,9 +26,7 @@ $option['BCC']="mel.egumes@gmail.com"; // change dynamic
 $option['SUBJECT']="Problème d'envoie";
 $option['BODY']= "Ceci est un message par défaut. Il y a eu un soucis lors de l'encodage du message";
 
-
-# Envoie de mail de contact
-
+# Envoi de mail de contact
 if (isset($_POST['contactSubmit'])) {
     $errors = [];
 
@@ -71,15 +68,12 @@ if (isset($_POST['contactSubmit'])) {
 			'html' => $option['BODY']
 		));
 
-
         $_SESSION['success'] = 1;
         header('Location: contact.php');
     }
 }
 
-
-# Envoie de mail de partenaire
-
+# Envoi de mail de partenaire
 if (isset($_POST['partenaireSubmit'])) {
     $errors = [];
 
@@ -142,9 +136,7 @@ if (isset($_POST['partenaireSubmit'])) {
     }
 }
 
-
-# Envoie de mail de commande
-
+# Envoi de mail de commande
 if (isset($_POST['commandeSubmit'])) {
     $errors = [];
 
@@ -171,8 +163,6 @@ if (isset($_POST['commandeSubmit'])) {
     if (!array_key_exists('heure', $_POST) || $_POST['heure'] == "") {
         $errors['heure'] = "Vous devez choisir l'heure à laquelle vous viendrez chercher vos légumes";
     }
-
-
 
     if (!empty($errors)) {
         $_SESSION['errors'] = $errors;
@@ -216,13 +206,7 @@ if (isset($_POST['commandeSubmit'])) {
     }
 }
 
-
-
-
-
-
-# Envoie de mail de formation
-
+# Envoi de mail de formation
 if (isset($_POST['formationSubmit'])) {
     $errors = [];
 
