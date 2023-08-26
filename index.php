@@ -4,12 +4,12 @@ $_SESSION['exclu'] = true;
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <title>Accueil | Mél'égumes</title>
-    <?php
-    require_once("include_head.php");
-    ?>
-</head>
+    <head>
+        <title>Accueil | Mél'égumes</title>
+        <?php
+        require_once("include_head.php");
+        ?>
+    </head>
 <body>
 
 <?php
